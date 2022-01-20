@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import NewExpense from "./components/NewExpense/NewExpense.js";
-import ExpenseList from "./components/Expenses/ExpenseList.js";
+import Expenses from "./components/Expenses/Expenses.js";
 
 var today = new Date();
 
@@ -29,7 +29,7 @@ function App() {
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
-      <ExpenseList expenses={expenses} />
+      <Expenses expenses={expenses} />
     </div>
   );
 }
